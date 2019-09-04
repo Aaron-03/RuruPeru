@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/allProducts.css">
+
+<div id="cont-allProducts-all">
+
+    <div class="cont-allProducts-form">
+
+        <form action="">
+
+            <div class="fields-allProducts">
+                <label for="allp_desc">Buscar:</label>
+                <input type="text" name="allp_desc" placeholder="Ingrese descripción de producto">
+            </div>
+
+            <div class="fields-allProducts">
+                <label for="allp_desc">Categoría</label>
+                <select name="allp_cat">
+                    <option value="0">Categoría 1</option>
+                    <option value="1">Categoría 2</option>
+                    <option value="2">Categoría 3</option>
+                </select>
+            </div>
+
+            <div class="fields-allProducts">
+                <label for="allp_desc">Mayor Precio:</label>
+                <button type="button" id="btn-order-up">&#9650;</button>
+            </div>
+
+            <div class="fields-allProducts">
+                <label for="allp_desc">Menor Precio:</label>
+                <button type="button" id="btn-order-down">&#9660;</button>
+            </div>
+
+            <div>
+                <button id="btn-allp-form">Consultar</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="cont-allProducts-title">
+
+        <h3>Lista de Productos Adquiridos</h3>
+
+    </div>
+
+    <div class="cont-allProducts-table">
+
+        <table class="allProducts-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/content/banners/banner0.jpg" alt=""></td>
+                    <td>Descripción de producto 1</td>
+                    <td>S/ 10.00</td>
+                    <td>10</td>
+                    <td>S/ 100.00</td>
+                </tr>
+                <tr>
+                    <td><img src="images/content/banners/banner1.jpg" alt=""></td>
+                    <td>Descripción de producto 2</td>
+                    <td>S/ 10.00</td>
+                    <td>20</td>
+                    <td>S/ 200.00</td>
+                </tr>
+                <tr>
+                    <td><img src="images/content/banners/banner2.jpg" alt=""></td>
+                    <td>Descripción de producto 3</td>
+                    <td>S/ 10.00</td>
+                    <td>30</td>
+                    <td>S/ 300.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RuruPerú</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/shopSale.css">
+    <link rel="stylesheet" href="css/mediaRule.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/login.js"></script>
+
+<body>
+    <div id="cont-log-reg-reset">
+
+        <div id="container-log-reg-1" class="container-log-reg">
+
+            <div>
+                <h3>INGRESAR AL SISTEMA</h3>
+                <button class="btn_close_log_reg close_log_reg">X</button>
+            </div>
+
+            <div id="cont-log-reg">
+
+                <div class="log-reg">
+
+                    <form action="" method="POST">
+
+                        <div class="log-reg-fields">
+                            <label for="log_user">
+                                <img src="images/userPass/user.png" alt="">
+                            </label>
+                            <input type="text" name="log_user" placeholder="Usuario">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="log_pass0">
+                                <img src="images/userPass/key.png" alt="">
+                            </label>
+                            <input type="password" name="log_pass0" placeholder="Correo electrónico (Email)">
+                        </div>
+
+                        <div>
+                            <button id="btn_login" class="btn_log_reg_reset">INGRESAR</button>
+                        </div>
+                    </form>
+
+                    <div id="cont-soc-register">
+                        <h4>Continúe con:</h4>
+                        <div id="red_soc">
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/fb.png">
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/tw.png">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>¿No tiene una cuenta? <a class="form_reg_user anchor_user">Regístrese</a></p>
+                        <p>¿Olvidó su contraseña? <a class="form_reset_user anchor_user">Restablecer</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="container-log-reg-2" class="container-log-reg">
+
+            <div>
+                <h3>CREAR CUENTA</h3>
+                <button class="btn_close_log_reg close_log_reg">X</button>
+            </div>
+
+            <div id="cont-log-reg">
+
+                <div class="log-reg">
+
+                    <form action="" method="POST">
+
+                        <div class="log-reg-fields">
+                            <label for="reg_user">
+                                <img src="images/userPass/user.png" alt="">
+                            </label>
+                            <input type="text" name="reg_user" placeholder="Crear usuario">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="reg_pass0">
+                                <img src="images/userPass/key.png" alt="">
+                            </label>
+                            <input type="password" name="reg_pass0" placeholder="Crear Contraseña">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="reg_pass1">
+                                <img src="images/userPass/key.png" alt="">
+                            </label>
+                            <input type="password" name="reg_pass1" placeholder="Confirmar contraseña">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="reg_email">
+                                <img src="images/register/email.png" alt="">
+                            </label>
+                            <input type="email" name="reg_email" placeholder="Correo electrónico (Email)">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="reg_phone">
+                                <img src="images/register/telephone.png" alt="">
+                            </label>
+                            <input type="text" name="reg_phone" placeholder="Número de contacto">
+                        </div>
+
+                        <div class="log-reg-fields">
+                            <label for="reg_gender">
+                                <img src="images/register/gender.png" alt="">
+                            </label>
+                            <select name="reg_gender" id="reg_gender">
+                                <option value="Varón">Varón</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="none">Sin especificar</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <button id="btn_register" class="btn_log_reg_reset">REGISTRARME</button>
+                        </div>
+
+                    </form>
+
+                    <div id="cont-soc-register">
+                        <h4>Continúe con:</h4>
+                        <div id="red_soc">
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/fb.png">
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/tw.png">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>¿Ya tiene una cuenta? <a class="form_login_user anchor_user">Ingresar</a></p>
+                        <p>¿Olvidó su contraseña? <a class="form_reset_user anchor_user">Restablecer contraseña</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="container-log-reg-3" class="container-log-reg">
+
+            <div>
+                <h3>RESTABLECER CONTRASEÑA</h3>
+                <button class="btn_close_log_reg close_log_reg">X</button>
+            </div>
+
+            <div id="cont-log-reg">
+
+                <div class="log-reg">
+
+                    <form action="" method="POST">
+
+                        <div class="log-reg-fields">
+                            <label for="reset_email">
+                                <img src="images/register/email.png" alt="">
+                            </label>
+                            <input type="email" name="reset_email" placeholder="Correo electrónico (Email)">
+                        </div>
+
+                        <div>
+                            <button id="btn_reset" class="btn_log_reg_reset">ENVIAR</button>
+                        </div>
+
+                    </form>
+
+                    <div id="cont-soc-register">
+                        <h4>Continúe con:</h4>
+                        <div id="red_soc">
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/fb.png">
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="images/socialNet/tw.png">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>¿Ya tiene una cuenta? <a class="form_login_user anchor_user">Ingresar</a></p>
+                        <p>¿No tienes una cuenta? <a class="form_reg_user anchor_user">Regístrate</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <header>
+        <div>
+            <img id="logo" src="images/header/logo.png" alt="">
+        </div>
+        <div id="btn-main">
+            <button>
+                <img src="images/header/main1.png" alt="">
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                    <div class="list-bottom-line"></div>
+                </li>
+                <li>
+                    <a href="products.html">PRODUCTOS</a>
+                    <div class="list-bottom-line"></div>
+                </li>
+                <li>
+                    <a href="production.html">PRODUCCIÓN</a>
+                    <div class="list-bottom-line"></div>
+                </li>
+                <li>
+                    <a href="company.html">CONÓCENOS</a>
+                    <div class="list-bottom-line"></div>
+                </li>
+                <li>
+                    <a class="btn_close_log_reg" id="li-log-reg">INGRESAR / REGISTRARSE</a>
+                    <div class="list-bottom-line"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container-shop-sale">
+
+        <section id="cont-shopSale-section">
+            <div>
+                <div>
+                    <h3>Lista de Artículos</h3>
+                </div>
+
+                <div class="cont-form-shop">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/content/banners/banner2.jpg" alt=""></td>
+                                <td>Nombre del producto 1</td>
+                                <td><span>S/</span><label>45.00</label></td>
+                                <td class="cont-table-shop-cant">
+                                    <span>2</span>
+                                    <div class="cont-btn-shop-cant">
+                                        <button class="btn-shop-cant-up">&#9650;</button>
+                                        <button class="btn-shop-cant-down">&#9660;</button>
+                                    </div>
+                                </td>
+                                <td><span>S/</span><label>90.00</label></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/content/banners/banner2.jpg" alt=""></td>
+                                <td>Nombre del producto 1</td>
+                                <td><span>S/</span><label>45.00</label></td>
+                                <td class="cont-table-shop-cant">
+                                    <span>2</span>
+                                    <div class="cont-btn-shop-cant">
+                                        <button class="btn-shop-cant-up">&#9650;</button>
+                                        <button class="btn-shop-cant-down">&#9660;</button>
+                                    </div>
+                                </td>
+                                <td><span>S/</span><label>90.00</label></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/content/banners/banner2.jpg" alt=""></td>
+                                <td>Nombre del producto 1</td>
+                                <td><span>S/</span><label>45.00</label></td>
+                                <td class="cont-table-shop-cant">
+                                    <span>2</span>
+                                    <div class="cont-btn-shop-cant">
+                                        <button class="btn-shop-cant-up">&#9650;</button>
+                                        <button class="btn-shop-cant-down">&#9660;</button>
+                                    </div>
+                                </td>
+                                <td><span>S/</span><label>90.00</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+
+        <aside id="cont-shopSale-aside">
+            <div id="cont-aside-shop">
+
+                <div>
+                    <h3>Resumen de Pedido</h3>
+                </div>
+                <form action="">
+                    <div class="fields_shop">
+                        <label for="prod_descon">Cantidad total:</label>
+                        <input type="text" name="prod_subtotal" value="6" readonly>
+                    </div>
+                    <div class="fields_shop">
+                        <label for="prod_descon">Subtotal:</label>
+                        <input type="text" name="prod_subtotal" value="S/ 270.00" readonly>
+                    </div>
+                    <div class="fields_shop">
+                        <label for="prod_descon">Descuento:</label>
+                        <input type="text" name="prod_descon" value="S/ 0.00" readonly>
+                    </div>
+                    <div class="fields_shop">
+                        <label for="prod_total_pagar">Total a Pagar:</label>
+                        <input type="text" name="prod_total_pagar" value="S/ 270.00" readonly>
+                    </div>
+                    <p>El costo de envío no está incluído.</p>
+                    <div>
+                        <button name="option" value="confirm_shop">Comprar</button>
+                    </div>
+                </form>
+
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+
+        <div class="content-footer">
+
+            <div class="content-contact-social">
+                <h3>Contáctenos</h3>
+                <p>
+                    <img src="images/content/rs/whatsapp3.png" alt="">
+                    +51 987-654-321
+                </p>
+                <p>
+                    <img src="images/header/icons/email0.png" alt="">
+                    info@ruruperu.pe
+                </p>
+                <p>
+                    <img src="images/header/icons/location0.png" alt="">
+                    Av.Aviación 321 San Borja, Lima.
+                </p>
+            </div>
+
+            <div class="content-contact-social">
+                <h3>Entérate más en nuestras redes sociales</h3>
+
+                <div>
+                    <a href="#">
+                        <img class="img-social" src="" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="img-social" src="" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="img-social" src="" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div>
+
+                <h3>Suscríbete a nuestro boletín personalizado</h3>
+
+                <div id="idx-cont-form">
+
+                    <form action="">
+
+                        <div class="idx-cont-fields">
+                            <input type="text" placeholder="INGRESE SU NOMBRE" name="idx_name" pattern="[a-zA-Z]{1,25}">
+                        </div>
+
+                        <div class="idx-cont-fields">
+                            <input type="email" placeholder="INGRESE SU CORREO ELECTRÓNICO" name="idx_email"
+                                pattern="[a-zA-Z]{1,25}">
+                        </div>
+
+                        <div>
+                            <button>Suscribirme</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="content-copyright">
+            <p>Todos los Derechos Reservados &copy; 2019</p>
+        </div>
+
+    </footer>
+</body>
